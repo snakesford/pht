@@ -29,7 +29,7 @@
       <h1>Book a Reservation</h1>
       <div id="source">Required fields are marked with an asterisk (*).</div>
       <div id="reservations">
-      <form method="post" action=" ">
+      <form method="POST" action="sendReservations">
         <label for="tour">*Tour:</label>
         <select size="1" name="tour" id="tour">
           <option>Choose Your Tour</option>
@@ -40,20 +40,20 @@
         <!-- Spam Mitigation Honeypot field -->
         <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
         <label for="myfname">*First Name:</label>
-          <input type="text" name="myfname" id="myfname" required>
+        <input type="text" name="myfname" id="myfname" required>
         <label for="mylname">*Last Name:</label>
-          <input type="text" name="mylname" id="mylname" required>
+        <input type="text" name="mylname" id="mylname" required>
         <label for="myemail">*Email:</label>
-          <input type="email" name="myemail" id="myemail" required>
+        <input type="email" name="myemail" id="myemail" required>
         <label for="myphone">Phone:</label>
-          <input type="tel" name="myphone" id="myphone">
+        <input type="tel" name="myphone" id="myphone">
         <label for="mydate">*Tour Date:</label>
-          <input type="date" name="mydate" id="mydate" required>
+        <input type="date" name="mydate" id="mydate" required>
         <label for="mygroup">*Total Participants</label>
-          <input type="number" name="mygroup" id="mygroup" min="1" max="8" required>
+        <input type="number" name="mygroup" id="mygroup" min="1" max="8" required>
         <label for="mycomments">*Do you have any food or drink sensitivities?</label>
-          <textarea name="mycomments" id="mycomments" rows="2" cols="20" required></textarea>
-          <input id="mysubmit" type="submit" value="Submit">
+        <textarea name="mycomments" id="mycomments" rows="2" cols="20" required></textarea>
+        <input id="mysubmit" type="submit" value="Submit">
       </form>
       </div>
     </main>
